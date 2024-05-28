@@ -18,6 +18,17 @@ export const tokens = (mode) => ({
                 800: "#2a2d64",
                 900: "#151632"
             },
+            blue: {
+                100: "#d7e9f8",
+                200: "#afd4f0",
+                300: "#87bee9",
+                400: "#5fa9e1",
+                500: "#3793da",
+                600: "#2c76ae",
+                700: "#215883",
+                800: "#163b57",
+                900: "#0b1d2c"
+            },
             black: {
                 100: "#d0d1d5",
                 200: "#a1a4ab",
@@ -77,6 +88,17 @@ export const tokens = (mode) => ({
                 200: "#a1a4ab",
                 100: "#d0d1d5",
             },
+            blue: {
+                900: "#d7e9f8",
+                800: "#afd4f0",
+                700: "#87bee9",
+                600: "#5fa9e1",
+                500: "#3793da",
+                400: "#2c76ae",
+                300: "#215883",
+                200: "#163b57",
+                100: "#0b1d2c"
+            },
 
             green: {
                 900: "#0f2922",
@@ -116,7 +138,7 @@ export const themeSettings = (mode) => {
                 ?
                 {
                     primary: {
-                        main: colors.black[500]
+                        main: colors.blue[800]
                     },
                     secondary: {
                         main: colors.indigo[500],
@@ -125,22 +147,22 @@ export const themeSettings = (mode) => {
                         main: colors.green[500],
                     },
                     background: {
-                        default: colors.black[500],
+                        default: colors.blue[800],
                     }
                 } : {
                     primary: {
-                        main: colors.black[100]
+                        main: colors.blue[100]
                     },
                     secondary: {
                         main: colors.indigo[500],
                     },
                     neutral: {
-                        dark: colors.grey[700],
+                        dark: colors.blue[700],
                         main: colors.green[500],
-                        light: colors.grey[100]
+                        light: colors.blue[100]
                     },
                     background: {
-                        default: "#fcfcfc",
+                        default: "#dcf2fb",
                     },
                 }
 
