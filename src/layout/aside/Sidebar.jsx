@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar'
+import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar'
 import 'react-pro-sidebar/dist/css/styles.css'
 import { Box, IconButton, Typography, useTheme } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { tokens } from '../../theme'
-//import { Menu, MenuList, MenuItem } from '@mui/material'
-import { IconContext } from 'react-icons'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined'
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined'
 import PersonOutlinedIcon from "@mui/icons-material/PeopleOutlined"
@@ -30,8 +28,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 }
 
 const Sidebar = () => {
-    const theme = useTheme()
-    const colors = tokens(theme.palette.mode)
+
     const [isCollapsed, setIsCollapsed] = useState(false)
     const [selected, setSelected] = useState('Dashboard')
 
@@ -96,8 +93,6 @@ const Sidebar = () => {
                 </Menu>
             </ProSidebar>
         </Box>
-
-
 
     )
 }

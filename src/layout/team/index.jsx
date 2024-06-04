@@ -77,7 +77,7 @@ const Team = () => {
                         border: "none",
                     },
                     "& .MuiDataGrid-cell": {
-                        color: colors.green[300]
+                        color: colors.green[700]
                     },
                     "& .MuiDataGrid-footerContainer": {
                         borderTop: "none",

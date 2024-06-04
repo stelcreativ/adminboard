@@ -1,10 +1,9 @@
 import React from 'react'
 import { Box } from "@mui/material"
-import { DataGrid, gridToolbar } from "@mui/x-data-grid"
+import { DataGrid } from "@mui/x-data-grid"
 import { tokens } from "../../theme"
 import { mockDataContacts } from "../../data/mockData"
 import { useTheme } from "@mui/material"
-import AdminPanelSettingsOutlined from "@mui/icons-material/LockOpenOutlined"
 
 const Contacts = () => {
     const theme = useTheme()
@@ -59,7 +58,11 @@ const Contacts = () => {
                         p="5px"
                         display="flex"
                         justifyContent="center"
-                        backgroundColour
+                        backgroundColor={
+                            access === "admin"
+                                ? colors.green[600]
+                                : colors.green[700]
+                        }
                     >
 
                     </Box>
@@ -79,7 +82,7 @@ const Contacts = () => {
                         border: "none",
                     },
                     "& .MuiDataGrid-cell": {
-                        color: colors.green[300]
+                        color: colors.green[700]
                     },
                     "& .MuiDataGrid-footerContainer": {
                         borderTop: "none",

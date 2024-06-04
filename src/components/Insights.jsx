@@ -1,7 +1,6 @@
 import React from 'react'
 import { tokens } from "../theme"
-import { Box, IconButton, Typography, useTheme } from '@mui/material'
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined"
+import { Box, Typography, useTheme } from '@mui/material'
 import Progress from './Progress'
 
 const Insights = ({ title, subtitle, icon, progress, increase }) => {
@@ -43,8 +42,6 @@ const Insights = ({ title, subtitle, icon, progress, increase }) => {
                     />
                 </Box>
             </Box>
-
-
 
 
             <Box display="flex" alignItems="space-between" m="10px 0px">
